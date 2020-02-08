@@ -1,2 +1,2 @@
-const routes = [require("./plugins/hello")];
+const routes = [require("./plugins/hello/")];
 module.exports = routes;
