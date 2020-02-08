@@ -1,0 +1,30 @@
+{
+	"env": {
+		"node": true,
+		"es6": true
+	},
+	"parserOptions": {
+		"sourceType": "module",
+		"ecmaVersion": 2017
+	},
+	"extends": [
+		"eslint:recommended"
+	],
+	"plugins": [
+		"prettier"
+	],
+	"rules": {
+		"no-console": "off",
+		"prettier/prettier": ["error", {
+			"trailingComma": "es5",
+			"useTabs": true,
+			"tabWidth": 4,
+			"semi": true,
+			"singleQuote": false,
+			"bracketSpacing": true,
+			"endOfLine": "crlf",
+			"printWidth": 100,
+			"arrowParens": "always"
+		}]
+	}
+}

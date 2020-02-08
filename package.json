@@ -1,0 +1,27 @@
+{
+	"name": "remedy",
+	"version": "0.1.0",
+	"description": "Remedy aspires to solve my own API problems in a simple way",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node main.js",
+		"lint": "eslint --ext .js --ignore-path .gitignore .",
+		"lintfix": "eslint --fix --ext .js --ignore-path .gitignore ."
+	},
+	"keywordAs": [],
+	"author": "JInfantesC",
+	"license": "ISC",
+	"devDependencies": {
+		"babel-eslint": "^10.0.3",
+		"eslint": "^6.8.0",
+		"eslint-config-prettier": "^6.10.0",
+		"eslint-loader": "^3.0.3",
+		"eslint-plugin-prettier": "^3.1.2",
+		"prettier": "^1.19.1"
+	},
+	"dependencies": {
+		"dotenv": "^8.2.0",
+		"server": "^1.0.22"
+	}
+}

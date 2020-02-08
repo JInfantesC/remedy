@@ -1,0 +1,8 @@
+# Used by server.js for sessions
+SECRET=your-random-string-here
+
+# Basic config
+PORT=8080
+PUBLIC=public
+FAVICON=public/favicon.ico
+NODE_ENV=development
