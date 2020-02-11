@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+        title Remedy
+        style.
+            .container {
+                background-color:lightgray;
+                padding:1em 2em;
+            }
+            .container p {
+                background-color:darkgray;
+                color:aliceblue;
+                padding:1em;
+                border-left:2px black solid;
+            }
+    body()
+        div#main.container
+            h1
+                img(src="favicon.ico" height=28)/
+                | Remedy base page
+            p Links to other routes
+            ul
+                li: a(href="/hello")= "Hello main page"
+                li: a(href="/hello/hi?name=Someone")= "Say hi to someone"
+            hr
+            form(action="/hello/hi" method="GET")
+                input(type="text" name="name")
+                button(type=submit) Say hi!

@@ -1,4 +1,5 @@
 require("dotenv").config();
+const path = require("path");
 const server = require("server");
 const { error } = server.router;
 const { status } = server.reply;
@@ -17,6 +18,9 @@ const routes = require("./routes.js");
 
 // Launch server with options and a couple of routes
 server(
+	{
+		FAVICON: path.join("public", "logo.png"), // needed for pkg to display image
+	},
 	logging,
 	routes,
 	notFound,
