@@ -24,7 +24,7 @@ server(
 	logging,
 	routes,
 	notFound,
-	error((ctx) => status(500).send(ctx.error))
+	error((ctx) => status(500).send(ctx.error.message))
 ).then((ctx) => {
 	console.log(`Server launched on http://localhost:${ctx.options.port}/`);
 });
