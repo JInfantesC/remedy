@@ -1,23 +1,11 @@
 doctype html
 html
     head
-        title Remedy
-        style.
-            .container {
-                background-color:lightgray;
-                padding:1em 2em;
-            }
-            .container p {
-                background-color:darkgray;
-                color:aliceblue;
-                padding:1em;
-                border-left:2px black solid;
-            }
+        include includes/head.pug
     body()
+        include includes/header.pug
         div#main.container
-            h1
-                img(src="favicon.ico" height=28)/
-                | Remedy base page
+            h1 Remedy base page
             p Links to other routes
             ul
                 li: a(href="/hello")= "Hello main page"
@@ -26,3 +14,4 @@ html
             form(action="/hello/hi" method="GET")
                 input(type="text" name="name")
                 button(type=submit) Say hi!
+        include includes/footer.pug
