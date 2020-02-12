@@ -21,7 +21,6 @@
 		"prettier": "^1.19.1"
 	},
 	"dependencies": {
-		"dotenv": "^8.2.0",
 		"server": "^1.0.22"
 	},
 	"bin": "main.js",
