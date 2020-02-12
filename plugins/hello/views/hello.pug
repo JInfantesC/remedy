@@ -1,12 +1,6 @@
-doctype html
-html
-    head
-        include ../../base/views/includes/head.pug
-    body()
-        include ../../base/views/includes/header.pug
-        div#main.container
-            h1 Remedy hello pages
-            p Hello world!
-            hr
-            a(href="/")= "Go back"
-        include ../../base/views/includes/footer.pug
+extends ../../base/views/includes/layout.pug
+block content
+    h1 Remedy hello pages
+    p Hello world!
+    hr
+    a(href="/")= "Go back"
