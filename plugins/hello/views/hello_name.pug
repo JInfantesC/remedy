@@ -1,6 +1,14 @@
 extends ../../base/views/includes/layout.pug
 block content
     h1 Remedy hello pages
-    p Hello #{name}!
+    p Hello #{name}! #{id}
     hr
+    ul
+        each item in list
+            li.cl
+                label=item.id
+                |&nbsp;
+                b=item.title
+                |&nbsp;
+                i=new Date(item.date).toUTCString()
     a(href="/")= "Go back"

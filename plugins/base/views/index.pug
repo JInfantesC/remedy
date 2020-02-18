@@ -1,6 +1,8 @@
 extends includes/layout.pug
 block content
     h1 Remedy base page
+    p Created at #{createdAt}
+    p Right now at #{now}
     p Links to other routes
     ul
         li: a(href="/hello")= "Hello main page"

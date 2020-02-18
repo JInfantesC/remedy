@@ -2,6 +2,7 @@ const path = require("path");
 const server = require("server");
 const { error } = server.router;
 const { status } = server.reply;
+require("./db/lowdb").init();
 
 const notFound = require("./utils/not_found.js")(() => {
 	return {
