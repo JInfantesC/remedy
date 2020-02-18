@@ -7,7 +7,8 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "node main.js",
 		"lint": "eslint --ext .js --ignore-path .gitignore .",
-		"lintfix": "eslint --fix --ext .js --ignore-path .gitignore ."
+		"lintfix": "eslint --fix --ext .js --ignore-path .gitignore .",
+		"build": "nexe main.js -r \"public/**/*\" -r \"plugins/**/views/**/*\" -o \"build/main\""
 	},
 	"keywordAs": [],
 	"author": "JInfantesC",
@@ -21,10 +22,7 @@
 		"prettier": "^1.19.1"
 	},
 	"dependencies": {
+		"nexe": "^3.3.2",
 		"server": "^1.0.22"
-	},
-	"bin": "main.js",
-	"pkg": {
-		"assets": ["plugins/**/views/**/*", "public/**/*"]
 	}
 }

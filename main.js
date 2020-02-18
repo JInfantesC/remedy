@@ -22,7 +22,8 @@ const routes = require("./routes.js");
 // Launch server with options and a couple of routes
 server(
 	{
-		FAVICON: path.join("public", "logo.png"), // needed for pkg to display image
+		FAVICON: path.join(__dirname, "/public/logo.png"), // needed for pkg to display image
+		PUBLIC: path.join(__dirname, "/public"),
 	},
 	logging,
 	shutdown,
